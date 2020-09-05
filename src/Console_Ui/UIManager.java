@@ -43,11 +43,11 @@ public class UIManager {
             while(isGameCanContinue()){
                 Scanner Scan = new Scanner(System.in);
                 printBoard();
-                System.out.println(" Enter the Cell Positon X, Y");
+                System.out.println(" Enter the Cell Position X : IT STARTS FROM 0");
                 int x = Scan.nextInt();
+                System.out.println(" Enter the Cell Position Y : IT STARTS FROM 0");
                 int y = Scan.nextInt();
                 gameManager.playASlot(x, y);
-
             }
                printBoard();
                 printResult();
